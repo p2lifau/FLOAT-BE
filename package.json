@@ -5,5 +5,23 @@
     "express": "^4.17.3",
     "mongoose": "^6.2.9",
     "morgan": "^1.10.0"
-  }
+  },
+  "name": "ptres-express-backend",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p2lifau/P3-express-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p2lifau/P3-express-backend/issues"
+  },
+  "homepage": "https://github.com/p2lifau/P3-express-backend#readme"
 }
