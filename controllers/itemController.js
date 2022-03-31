@@ -26,6 +26,7 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
     try{
         const newItem = await Item.create(req.body);
+        console.log(newItem);
         res.send({
             success: true,
             data: newItem
