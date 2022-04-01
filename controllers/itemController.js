@@ -2,7 +2,7 @@ const express = require('express');
 // router equal to the invoking of express
 const router = express();
 // Item variable equals our item.js model
-const Item = require('../models/item');
+const Item = require('../models/items');
 
 // sending JSON to the front end
 // Strategy for us to see if things work or not, we use a try and catch
