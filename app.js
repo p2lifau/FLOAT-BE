@@ -21,6 +21,9 @@ app.use(morgan('short'))
 app.use(urlencoded({extended: true}));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.redirect("/items");
+  });
 app.use('/items', itemController);
 const port = process.env.PORT || 4000
 
