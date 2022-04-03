@@ -1,7 +1,6 @@
 require('dotenv').config()
 const {urlencoded} = require('express');
 const express = require('express');
-const cors = require('cors');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const app = express();
@@ -17,7 +16,6 @@ db.on('disconnected', ()=> console.log('mongo disconnected'));
 // morgan will tell us our http requests, errors or successes
 app.use(morgan('short'))
 // cors allows us to make cross origin requests express to react
-app.use(cors())
 // app.use(express())
 
 app.use(urlencoded({extended: true}));
