@@ -22,7 +22,8 @@ app.use(urlencoded({extended: true}));
 app.use(express.json());
 
 app.use('/items', itemController);
-const port = process.env.PORT || 4000
+// const port = process.env.PORT || 4000
+const port = 'https://sneakerfloatbackend.herokuapp.com/'
 
 app.listen(port, ()=>{
     console.log('app running')
