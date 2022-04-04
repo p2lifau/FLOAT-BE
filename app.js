@@ -17,7 +17,7 @@ db.on('disconnected', ()=> console.log('mongo disconnected'));
 // morgan will tell us our http requests, errors or successes
 app.use(morgan('short'))
 // cors allows us to make cross origin requests express to react
-const cors = require("cors");
+app.use(cors());
 
 // app.use(express())
 
