@@ -12,7 +12,7 @@ const mongoURI = process.env.MONGO_URI
 // Connect to Mongo, this message logs to the console when our db is connected
 mongoose.connect(mongoURI, ()=> console.log('mongo connected:', mongoURI));
 const db = mongoose.connection;
-db.on('error', (err) => console.log(err.message + 'is Mongod not running'));
+db.on('error', (err) => console.log(err.message + ' is Mongod not running'));
 db.on('disconnected', ()=> console.log('mongo disconnected'));
 // morgan will tell us our http requests, errors or successes
 app.use(morgan('short'))
